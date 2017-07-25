@@ -98,7 +98,7 @@ class VectorTileSource extends Evented implements Source {
             url: normalizeURL(tile.coord.url(this.tiles, this.maxzoom, this.scheme), this.url),
             uid: tile.uid,
             coord: tile.coord,
-            zoom: tile.coord.z,
+            zoom: this.map.transform.zoom,
             tileSize: this.tileSize * overscaling,
             type: this.type,
             source: this.id,
