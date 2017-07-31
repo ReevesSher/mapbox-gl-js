@@ -18,8 +18,13 @@ const Point = require('@mapbox/point-geometry');
 const Evented = require('./util/evented');
 const config = require('./util/config');
 const rtlTextPlugin = require('./source/rtl_text_plugin');
-
+// 额外接口
+const GeoJSONSource = require('./source/geojson_source');
+// 引入draw
+const draw = require('@mapbox/mapbox-gl-draw')
 module.exports = {
+    draw,
+    GeoJSONSource,
     version,
     supported,
 
