@@ -20,9 +20,10 @@ const config = require('./util/config');
 const rtlTextPlugin = require('./source/rtl_text_plugin');
 //add draw plugin
 const draw = require('@mapbox/mapbox-gl-draw');
+zxmap = zxmap || {};
+zxmap.draw = draw;
 
 module.exports = {
-    draw,
 
     version,
     supported,
